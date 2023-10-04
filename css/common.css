@@ -1,0 +1,84 @@
+/* 폰트 */
+@font-face { 
+  font-family: 'GangwonEduPowerExtraBoldA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedKR-Rg';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Rg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: 'LINESeedKR-Rg';
+  background-color: var(--gray1);
+}
+html, body {
+  font-size: 15px;
+  color: var(--gray4);
+}
+body::-webkit-scrollbar {
+  width: 10px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blueGreen); /* 스크롤바의 색상 */
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--gray3);  /*스크롤바 뒷 배경 색상*/
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+:root {
+  /* color */
+  --blueGreen: #1BB8C2;
+  --gray1: #F3F2F0;
+  --gray2: #E4E4E2;
+  --gray3: #B1AEAB;
+  --gray4: #676461;
+  /* font size */
+  --fontSize48: 3.2rem;
+  --fontSize30: 2rem;
+  --fontSize28: 1.87rem;
+  --fontSize22: 1.47rem;
+  --fontSize18: 1.2rem;
+  --fontSize16: 1.07rem;
+  --boxShadow: 4px 4px 4px #67646138;
+  --border: 3px solid var(--gray4);
+  --boxBorder: 5px solid var(--gray3);
+}
+input, button {
+  font-family: 'LINESeedKR-Bd';
+  font-size: var(--fontSize16);
+  box-shadow: var(--boxShadow);
+}
+button {
+  background-color: var(--blueGreen);
+  border: var(--border);
+  color: var(--gray1);
+  box-shadow: var(--boxShadow);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'GangwonEduPowerExtraBoldA';
+  color: var(--gray4);
+}
+.inner {
+  width: 67.71%; /* 1300px */
+  margin: auto;
+}
+.inner_right {
+  width: 83.85%;
+  margin-left: auto;
+}
+section {
+  border-bottom: var(--border);
+}
