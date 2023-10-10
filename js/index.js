@@ -225,3 +225,43 @@ let viewMore = document.querySelector(".view_more");
 viewMore.addEventListener("click", ()=>{
   window.location.href = 'viewmore.html';
 })
+
+/* 메일 */
+
+
+
+function sendEmail() {
+  let templateParams = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    subject: document.getElementById('subject').value,
+    message: document.getElementById('message').value,
+  }
+  console.log(templateParams);
+  emailjs.send('service_0d0slcs', 'template_7ki1f37', templateParams)
+    .then(function (response) {
+      console.log('Success!', response.status, response.text);
+      setStatus('success');
+    })
+    .catch(function (error) {
+      console.log('Failed...', error);
+      setStatus('fail');
+    });
+}
+
+
+function inputFillSend(){
+  let inputName = document.querySelector('.contact #name').value;
+  let inputMail = document.querySelector('.contact #email').value;
+  let inputSubject = document.querySelector('.contact #subject').value;
+  let inputTextArea = document.querySelector('.contact textarea').value;
+
+  if (inputName != '' && inputMail != '' && inputSubject != ''  && inputTextArea != '' ) {
+    sendEmail()
+  } else {
+    alert('✨ Contact Me를 모두 채워주세요 ✨')
+  }
+}
+
+let sendButton = document.querySelector(".send_button");
+sendButton.addEventListener('click', inputFillSend);

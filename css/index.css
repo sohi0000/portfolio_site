@@ -4,7 +4,8 @@ section {
 }
 .portfolio_inner,
 .skill_n_tool_inner,
-.about_inner {
+.about_inner,
+.contact_inner {
   height: 100%;
   border-left: var(--border);
   position: relative;
@@ -451,4 +452,48 @@ section {
 }
 .epilogue p {
   font-size: var(--fontSize18);
+}
+.contact_wrap {
+  width: 400px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.contact_wrap label {
+  font-size: var(--fontSize28);
+}
+.contact_wrap input {
+  width: 400px;
+  height: 50px;
+  background-color: var(--gray1);
+  padding: 1rem;
+  border: 3px solid var(--gray3);
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+.contact_wrap textarea {
+  height: 200px;
+  background-color: var(--gray1);
+  padding: 1rem;
+  border: 3px solid var(--gray3);
+  outline: none;
+}
+.contact_wrap button {
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  align-self: center;
+  padding-top: .3rem;
+}
+.contact_wrap input::placeholder {
+  font-family: 'LINESeedKR-Rg';
+  font-size: var(--fontSize18);
+}
+.contact_wrap textarea::placeholder {
+  font-family: 'LINESeedKR-Rg';
+  font-size: var(--fontSize18);
+  color: var(--gray4);
 }
