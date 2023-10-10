@@ -258,6 +258,7 @@ function inputFillSend(){
 
   if (inputName != '' && inputMail != '' && inputSubject != ''  && inputTextArea != '' ) {
     sendEmail()
+    alert('메일이 성공적으로 보내졌습니다 🎉')
   } else {
     alert('✨ Contact Me를 모두 채워주세요 ✨')
   }
