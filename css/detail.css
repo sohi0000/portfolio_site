@@ -48,7 +48,7 @@ section {
 }
 .site_desc {
   width: 400px;
-  height: 480px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -106,8 +106,8 @@ section {
   border-radius: 50%;
 }
 .site_description {
-  height: 200px;
-  border: 1px solid #000;
+  height: 150px;
+  /* border: 1px solid #000; */
 }
 /* detail_preview */
 .preview_box {
